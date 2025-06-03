@@ -91,16 +91,30 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
-  color: #222;
-  font-size: 0.98em;
+  /* Oculta los puntos de lista y usa layout en bloque */
+  list-style-type: none;
+  margin-left: 0;
   padding-left: 0;
 }
 
-.participants-list li {
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 4px;
-  padding-left: 2px;
+}
+
+.delete-participant-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 4px;
+  margin-left: 4px;
+}
+
+.delete-participant-btn span {
+  color: #c00;
+  font-size: 1.1em;
 }
 
 .form-group {
